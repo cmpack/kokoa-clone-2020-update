@@ -1,0 +1,33 @@
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  box-sizing: border-box;
+}
+
+.status-bar__column {
+  width: 33%;
+}
+
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 폭 33%으로 맞추고 가운데 요소만 justify-content:center
+  그리고 마지막 요소를 flex-end로 뒤로 당겨주면 3등분 status-bar 완성*/
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}

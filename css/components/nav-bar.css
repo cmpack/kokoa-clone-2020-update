@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  /*padding을 줘도 width에 관여하지 않게함 width가 안늘게함*/
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.notifiction-more {
+  width: 5px;
+  height: 5px;
+  left: 33px;
+  top: -10px;
+}
